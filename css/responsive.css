@@ -13,6 +13,7 @@
     #footer-container {
         width: unset;
         max-width: fit-content;
+    /*    grids add a margin*/
     }
 
 
@@ -81,6 +82,21 @@
 
     #search-bar {
         width: unset;
+        height: 45px !important;
+
+        > div {
+            width: 36px !important;
+            height: 36px !important;
+
+            svg {
+                width: 16px !important;
+                height: 16px !important;
+            }
+        }
+    }
+
+    #search-bar-section {
+        height: 125px;
     }
 
     #card-container {
@@ -91,7 +107,6 @@
     }
 
     #card-1 {
-
         flex-direction: column;
         align-items: center;
         border-right: none;
@@ -104,7 +119,6 @@
     }
 
     #card-2 {
-
         align-items: center;
         box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .1);
     }
@@ -134,35 +148,37 @@
 
     }
 
-    #footer-container{
+    #footer-container {
         grid-template-columns: 45% 45%;
         width: 100%;
     }
 
-    #footer-bottom{
+    #footer-bottom {
         width: 100%;
         flex-direction: column;
         justify-content: space-around;
-        svg{
+
+        svg {
             margin-top: 10px;
         }
 
     }
 
-    #divider{
+    #divider {
         width: 100%;
     }
 
 
-    #category-section{
+    #category-section {
 
         width: 100%;
-        h3{
+
+        h3 {
             margin-left: 16px;
         }
     }
 
-    #category-container{
+    #category-container {
         width: 100%;
         grid-template-columns: repeat(15, 1fr);
         overflow: hidden;
@@ -174,13 +190,4 @@
         flex-direction: column;
 
     }
-
-
-
-
-
-
-
-
-
 }
